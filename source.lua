@@ -1,4 +1,4 @@
-local Yung = loadstring(game:HttpGet("https://raw.githubusercontent.com/testForlockAndsets/aura.cc/main/aura.cc"))()
+local Yung = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lior4410/techoko.cc/main/sourcev2.lua"))()
 local Circle2222 = Yung:New3DCircle()
 Circle2222.Visible = false
 Circle2222.ZIndex = 1
@@ -12,7 +12,7 @@ local aiming = {
         targeting = false,
         view = false,
         chat = false,
-        ben = false,
+        win11 = false,
         autoshoot = false,
         autoprediction = false,
         key = Enum.KeyCode.Q,
@@ -139,13 +139,13 @@ game:GetService("UserInputService").InputBegan:Connect(
                     end
                 end
 
-                if aiming.targetaim.ben == true then
-                    local benlocked = Instance.new("Sound")
-                    benlocked.Name = "e"
-                    benlocked.Volume = aiming.targetaim.benvolume
-                    benlocked.SoundId = "rbxassetid://8819783960"
-                    benlocked.Parent = game:GetService("SoundService")
-                    benlocked.Playing = true
+                if aiming.targetaim.win11 == true then
+                    local win11locked = Instance.new("Sound")
+                    win11locked.Name = "q"
+                    win11locked.Volume = aiming.targetaim.win11volume
+                    win11locked.SoundId = "rbxassetid://11334614655"
+                    win11locked.Parent = game:GetService("SoundService")
+                    win11locked.Playing = true
                 end
 
                 if targetplr ~= nil and aiming.visualization.mode == "Part" then
@@ -223,13 +223,13 @@ game:GetService("UserInputService").InputBegan:Connect(
                     vvv:Destroy()
                 end
 
-                if aiming.targetaim.ben == true then
-                    local benunlocked = Instance.new("Sound")
-                    benunlocked.Name = "Penis"
-                    benunlocked.Volume = aiming.targetaim.benvolume
-                    benunlocked.SoundId = "rbxassetid://8819782435"
-                    benunlocked.Parent = game:GetService("SoundService")
-                    benunlocked.Playing = true
+                if aiming.targetaim.win11 == true then
+                    local win11unlocked = Instance.new("Sound")
+                    win11unlocked.Name = "Penis"
+                    win11unlocked.Volume = aiming.targetaim.win11volume
+                    win11unlocked.SoundId = "rbxassetid://11334615503"
+                    win11unlocked.Parent = game:GetService("SoundService")
+                    win11unlocked.Playing = true
                 end
             end
         end
@@ -802,8 +802,8 @@ gm.__namecall = newcclosure( function(self, ...)
 	return namecall(self, unpack(args))
 end)
 
-local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/imagoodpersond/puppyware/main/lib"))()
-local Window = libary:new({name = "                      techoko.lua                 ", accent =Color3.fromRGB(0.603921, 0.011764, 1), textsize = 13})
+local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lior4410/techoko.cc/main/library.lua"))()
+local Window = libary:new({name = "techoko.lua", accent =Color3.fromRGB(0.603921, 0.011764, 1), textsize = 13})
 
 local AimingTab = Window:page({name = "Aiming I"})
 local RageTab = Window:page({name = "Aiming II"})
@@ -947,11 +947,11 @@ end})
 LAimSection:toggle({name = "Enabled", def = false, callback = function(Boolean)
     aiming.targetaim.autoshoot = Boolean
 end})
-TAimSection:toggle({name = "Ben Mode", def = false, callback = function(Boolean)
-    aiming.targetaim.ben = Boolean
+TAimSection:toggle({name = "Windows 11 Mode (Not Working For a time)", def = false, callback = function(Boolean)
+    aiming.targetaim.win11 = Boolean
 end})
-TAimSection:slider({name = "Ben Volume", def = 0, max = 100, min = 2, rounding = true, callback = function(v)
-    aiming.targetaim.benvolume = v
+TAimSection:slider({name = "Windows 11 Volume", def = 0, max = 100, min = 2, rounding = true, callback = function(v)
+    aiming.targetaim.win11volume = v
  end})
 
 
@@ -1257,7 +1257,7 @@ spawn(
 --[[
 
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/CatzCode/cattoware/main/libraries/ui.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lior4410/techoko.cc/main/ui.lua"))()
 
 local Window = library:CreateWindow("HoodReligions", Vector2.new(492, 665), Enum.KeyCode.RightShift) -- arg 1 is the name, arg 2 is the size in X-Y and RightShift is the bind.
 
